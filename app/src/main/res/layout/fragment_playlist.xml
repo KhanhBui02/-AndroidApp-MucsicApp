@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PlaylistFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlists_text"
+        android:textColor="@color/black"
+        android:text="PLAYLISTS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_playlists_text"
+        android:text="NO PLAYLIST FOUND"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/add_playlist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Playlist"
+        android:layout_below="@+id/playlist_recycler_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlist_recycler_view"
+        android:layout_below="@+id/playlists_text"/>
+</RelativeLayout>

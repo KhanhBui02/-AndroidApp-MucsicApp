@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SettingsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/songs_text"
+        android:textColor="@color/black"
+        android:text="SETTINGS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:gravity="center" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_volume_up_24"
+        android:layout_marginTop="-30dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/volume_icon"/>
+
+    <SeekBar
+        android:id="@+id/volume_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_vertical"
+        android:progress="50"
+        android:max="100" />
+</FrameLayout>
